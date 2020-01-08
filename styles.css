@@ -1,0 +1,13 @@
+.image {
+	text-align: center;
+	width: 200px;
+	height: 200px;
+}
+
+.product-mrp {
+	text-decoration: line-through;
+}
+
+.product-quantity {
+	display: inline;
+}
