@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SHOPPING CART</title>
-    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="./assets/styles/styles.css" type='text/css'>
+    <title>SHOPPING CART</title>    
+    <link rel="stylesheet" href="./src/styles/cart.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
 </head>
 <body>
     <h1>Shopping Cart</h1>
@@ -15,11 +15,11 @@
     </div>
     <div class='cart-container'>
         <div class='shopping-cart'>
-            <div class="cart-quantity">quantity: <span class="product-quantity">0</span></div>
-            <div class='total'>TOTAL: 0</div>                
+            <div class="cart-quantity">quantity: <span class="total-quantity">0</span></div>
+            <div class='total'>TOTAL: <span class="total-price">0</span></div>                
         </div>
         <div>
-            <button class="cart-checkout" disabled>Checkout</button>
+            <button class="cart-checkout">Checkout</button>
         </div>
     </div> 
     <div id='myModal' class="modal">        
@@ -27,9 +27,10 @@
              <span class="close">&times;</span>
              <p class='checkout-text'></p>
          </div>
-    </div>
-    <script src='./assets/JSfiles/script.js'>   
-    </script>
-    
+    </div>    
+    <script src='./src/JSfiles/variables.js''></script>
+    <script src='./src/JSfiles/cart.js'></script>
+    <script src='./src/JSfiles/display.js'></script>
+    <script src='./src/JSfiles/getData.js'></script>    
 </body>
 </html>
